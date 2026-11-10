@@ -1,0 +1,19 @@
+@import url("../style.css");
+
+/* The supplied pages refer to local café photography. These original, lightweight
+   illustrations keep every image available offline and match the café's palette. */
+.hero { background-image: linear-gradient(90deg, rgba(27,18,12,.82), rgba(43,27,18,.2)), url("../images/hero.svg"); }
+.page-banner-menu { background-image: linear-gradient(115deg, rgba(43,27,18,.88), rgba(111,78,55,.62)), url("../images/latte.svg"); }
+.page-banner-gallery { background-image: linear-gradient(115deg, rgba(43,27,18,.82), rgba(111,78,55,.6)), url("../images/cafe-interior.svg"); }
+
+/* Replace the unavailable photo filenames with local SVG illustrations. */
+img[src$="logo.svg"] { content: url("../images/logo.svg"); }
+img[src$="latte.jpg"] { content: url("../images/latte.svg"); }
+img[src$="cappuccino.jpg"] { content: url("../images/cappuccino.svg"); }
+img[src$="croissant.jpg"] { content: url("../images/croissant.svg"); }
+img[src$="about-owner.jpg"] { content: url("../images/cafe-story.svg"); }
+img[src$="gallery-1.jpg"], img[src$="gallery-8.jpg"] { content: url("../images/latte.svg"); }
+img[src$="gallery-2.jpg"] { content: url("../images/barista.svg"); }
+img[src$="gallery-3.jpg"] { content: url("../images/coffee-beans.svg"); }
+img[src$="gallery-4.jpg"], img[src$="gallery-5.jpg"], img[src$="gallery-6.jpg"] { content: url("../images/cafe-interior.svg"); }
+img[src$="gallery-7.jpg"] { content: url("../images/cafe-story.svg"); }
